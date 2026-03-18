@@ -1,0 +1,169 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+
+body{
+  background:black;
+  color:white;
+  overflow:hidden;
+}
+
+canvas{position:fixed;top:0;left:0}
+#stars{z-index:0}
+#fireworks{z-index:1}
+
+.content{
+  position:relative;
+  z-index:2;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:20px;
+}
+
+h1{
+  font-size:2.8rem;
+  color:#c77dff;
+  text-shadow:0 0 20px #9d4edd;
+}
+
+h2{
+  height:40px;
+  margin:10px 0;
+  font-size:2rem;
+  color:#ffd6ff;
+  text-shadow:0 0 15px #ff80bf;
+}
+
+.slideshow img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid #c77dff;
+  box-shadow:0 0 30px #9d4edd;
+  animation:fade 1s;
+}
+
+@keyframes fade{
+  from{opacity:0}
+  to{opacity:1}
+}
+
+.cake{
+  font-size:4rem;
+  margin:10px 0;
+  position:relative;
+}
+
+.candle{
+  position:absolute;
+  top:-20px;
+  left:50%;
+  transform:translateX(-50%);
+  animation:flicker .3s infinite alternate;
+}
+
+@keyframes flicker{
+  from{opacity:.6}
+  to{opacity:1}
+}
+
+p{
+  max-width:300px;
+  opacity:.9;
+}
+
+.music-btn{
+  position:fixed;
+  top:15px;
+  right:15px;
+  background:#c77dff;
+  border:none;
+  border-radius:50%;
+  width:45px;
+  height:45px;
+  font-size:1.2rem;
+  color:white;
+}
+
+/* TOMBOL HADIAH */
+.gift-btn{
+  margin-top:15px;
+  padding:12px 22px;
+  font-size:1rem;
+  background:linear-gradient(45deg,#ff80bf,#c77dff);
+  border:none;
+  border-radius:25px;
+  color:white;
+  box-shadow:0 0 15px #c77dff;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse{
+  0%{transform:scale(1)}
+  50%{transform:scale(1.05)}
+  100%{transform:scale(1)}
+}
+
+/* POPUP HADIAH */
+.gift-box{
+  position:fixed;
+  top:0;left:0;
+  width:100%;height:100%;
+  background:rgba(0,0,0,.8);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:5;
+}
+
+.gift-content{
+  background:#1a1a1a;
+  padding:25px;
+  border-radius:20px;
+  text-align:center;
+  max-width:300px;
+  box-shadow:0 0 30px #ff80bf;
+  animation:zoom .4s ease;
+}
+
+@keyframes zoom{
+  from{transform:scale(.5);opacity:0}
+  to{transform:scale(1);opacity:1}
+}
+
+.gift-content h3{
+  color:#ffd6ff;
+  margin-bottom:10px;
+}
+
+.gift-content p{
+  font-size:.95rem;
+  margin-bottom:10px;
+}
+
+.gift-content img{
+  width:120px;
+  height:120px;
+  border-radius:15px;
+  object-fit:cover;
+  margin-bottom:10px;
+}
+
+.gift-content button{
+  padding:8px 16px;
+  border:none;
+  border-radius:20px;
+  background:#c77dff;
+  color:white;
+}
+
+.gift-content video{
+  width:100%;
+  max-width:260px;
+  border-radius:15px;
+  margin:10px 0;
+  box-shadow:0 0 20px #ff80bf;
+}
