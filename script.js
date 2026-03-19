@@ -17,8 +17,8 @@ typeName();
 /* =========================
    SLIDESHOW FOTO
 ========================= */
-const photos = [
-  "foto1.jpg",
+const images = [
+  "foto/1.jpg",
   "photos/2.jpg",
   "photos/3.jpg"
 ];
