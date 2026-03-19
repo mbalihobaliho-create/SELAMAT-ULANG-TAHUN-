@@ -18,7 +18,7 @@ typeName();
    SLIDESHOW FOTO
 ========================= */
 const photos = [
-  "foto/1.jpg",
+  "foto1.jpg",
   "photos/2.jpg",
   "photos/3.jpg"
 ];
