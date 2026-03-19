@@ -19,8 +19,6 @@ typeName();
 ========================= */
 const images = [
   "foto/1.jpg",
-  "photos/2.jpg",
-  "photos/3.jpg"
 ];
 
 let index = 0;
