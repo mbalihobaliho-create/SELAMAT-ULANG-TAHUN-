@@ -1,7 +1,7 @@
 /* =========================
    NAMA PACAR (UBAH DI SINI)
 ========================= */
-const pacar = "PURI";
+const pacar = "PURI ";
 let i = 0;
 const nameEl = document.getElementById("name");
 
